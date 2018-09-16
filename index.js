@@ -8,19 +8,19 @@
 const swaggerTools = require('swagger-tools');
 const debug = require('debug')('koa2-swagger-metadata');
 
-exports = module.exports = async function (swaggerDoc) {
+exports = module.exports = async function () {
   debug('Initializing koa2-swagger-metadata');
 
-  const generateMetadata = function () {
+  const generateMetadata = () => {
     return new Promise((resolve, reject) => {
-      swaggerTools.initializeMiddleware(swaggerDoc, function ({swaggerMetadata}) {
+      swaggerTools.initializeMiddleware(...arguments, function ({swaggerMetadata}) {
         resolve(swaggerMetadata());
       });
     });
   };
   const metadata = await generateMetadata();
 
-  const parseMetadata = function (ctx) {
+  const parseMetadata = ctx => {
     return new Promise((resolve, reject) => {
       metadata(ctx.req, ctx.res, err => err ? reject(err) : resolve());
     });
