@@ -1,0 +1,30 @@
+{
+  "name": "koa2-swagger-metadata",
+  "version": "1.0.0",
+  "description": "swagger metadata processer for koa2, fork form swagger-tools middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aerchen/koa2-swagger-metadata.git"
+  },
+  "keywords": [
+    "swagger",
+    "metadata",
+    "openapi",
+    "koa2",
+    "middleware",
+    "parser"
+  ],
+  "author": "Darren Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aerchen/koa2-swagger-metadata/issues"
+  },
+  "homepage": "https://github.com/aerchen/koa2-swagger-metadata#readme",
+  "dependencies": {
+    "swagger-tools": "^0.10.4"
+  }
+}
