@@ -63,6 +63,7 @@ exports = module.exports = async function () {
         throw err;
       }
     });
+
     debug('Validate success');
     await next();
   };
