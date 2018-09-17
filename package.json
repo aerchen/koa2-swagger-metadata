@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/aerchen/koa2-swagger-metadata#readme",
   "dependencies": {
+    "jsonschema": "^1.2.4",
+    "lodash": "^4.17.11",
     "swagger-tools": "^0.10.4"
   }
 }
